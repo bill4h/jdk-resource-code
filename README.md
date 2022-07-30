@@ -2,7 +2,43 @@
 
 ## 概念
 
-**ArrayList**是List接口的具体实现类。其底层是基于一个动态扩容的对象数组实现的。
+**ArrayList**是List接口的具体实现类。  
+其底层是基于一个动态扩容的对象数组实现的。
+
+*jdk版本：openjdk version "11.0.12" 2021-07-20*
+
+## 成员变量篇
+
+> **静态变量**
+> INITIAL_CAPACITY = 10
+> 数组默认的 ***初始容量*** ：10
+
+> **静态变量**
+> DEFAULT_EMPTY_ELEMENTDATA
+> 一个空数组对象。  
+> 何时：**无参构造**，实例的elementData指向它。
+> ``` mermaid
+> graph LR
+> A("ArrayList( )")
+> ```
+
+> **静态变量**
+> EMPTY_ELEMENTDATA
+> 一个空数组对象。
+> + **构造函数(容量)**，容量 =0 时，elementData指向它；  
+> + **构造函数(集合)**，集合长度 =0 时，elementData指向它。
+>```mermaid
+>    graph LR
+>    A("ArrayList(int initialCapacity)")-->B(initialCapacity == 0)
+>    C("ArrayList(Collection < ? extends E> c)")-->D("a = c.toArray(); a.length == 0")
+>``` 
+
+
+
+## 构造函数篇
+
+ArrayList共提供了三种构造函数
+
 
 ### ArrayList( ) 无参构造函数
 
