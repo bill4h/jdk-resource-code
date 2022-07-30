@@ -10,11 +10,11 @@
 ## 成员变量篇
 
 > **静态变量**
-> INITIAL_CAPACITY = 10
+> INITIAL_CAPACITY = 10  
 > 数组默认的 ***初始容量*** ：10
 
 > **静态变量**
-> DEFAULT_EMPTY_ELEMENTDATA
+> DEFAULT_EMPTY_ELEMENTDATA  
 > 一个空数组对象。  
 > 何时：**无参构造**，实例的elementData指向它。
 > ``` mermaid
@@ -23,7 +23,7 @@
 > ```
 
 > **静态变量**
-> EMPTY_ELEMENTDATA
+> EMPTY_ELEMENTDATA  
 > 一个空数组对象。
 > + **构造函数(容量)**，容量 =0 时，elementData指向它；  
 > + **构造函数(集合)**，集合长度 =0 时，elementData指向它。
@@ -122,3 +122,5 @@ public ArrayList(Collection<? Extends E> c)
         elementData = EMPTY_ELEMENTDATA;
     }
 ```
+
+***未完待续...***
